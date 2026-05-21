@@ -6,11 +6,11 @@ weight: 1
 ---
 # About Our Group
 
-Our research is focused on developing explainable AI algorithms, intelligent computational mechanics, uncertainty quantification and complex systems, micro- and macro-scale granular mechanics, coastal infrastructure resilience and digital twins.
+Our research is focused on computational and intelligent geomechanics.
 
 # Contact Us
 
-We are looking for Ph.D and Postdoc to work on science machine learning, advanced computational mechanics and geotechnical engineering. Students in applied mathematics, computer science, mechanics, geotechnical engineering or related majors are welcome to apply.
+We are looking for Ph.D and Postdoc to work on scientific machine learning, advanced computational mechanics and geomechanics. Students in applied mathematics, computer science, mechanics, geotechnical engineering or related majors are welcome to apply.
 
 Master, undergraduate students and visiting scholars are also very welcome if you are interested in our research and we can do something different together.
 
