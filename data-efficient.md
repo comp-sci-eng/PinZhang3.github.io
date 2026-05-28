@@ -10,17 +10,28 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ---
 
+<p class="de-case-note">
+  Representative case studies are shown below.
+</p>
+
 <style>
+  .de-case-note {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #444;
+  }
+
   .de-tabs {
     display: flex;
     flex-direction: row;
     gap: 14px;
-    margin-top: 28px;
+    margin-top: 10px;
     margin-bottom: 34px;
     padding: 8px;
     background: #f7f9fb;
     border: 1px solid #e5eaf0;
-    border-radius: 16px;
+    border-radius: 18px;
   }
 
   .de-tab {
@@ -30,7 +41,7 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
     cursor: pointer;
     background-color: #ffffff;
     border: 1px solid #d9e2ec;
-    border-radius: 12px;
+    border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     transition: all 0.2s ease;
   }
@@ -66,40 +77,27 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
     display: block;
   }
 
-  .de-section-title {
+  .de-method-title {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
-  .de-info-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    align-items: stretch;
-    margin: 18px 0 22px 0;
-  }
-
-  .de-info-card {
-    flex: 1;
-    min-width: 240px;
-    border: 1px solid #d9e2ec;
-    border-radius: 12px;
-    padding: 14px 16px;
-    background-color: #fbfdff;
-  }
-
-  .de-info-card strong {
-    display: block;
-    margin-bottom: 6px;
+  .de-meta {
+    margin: 6px 0;
     font-size: 15px;
+    line-height: 1.5;
   }
 
-  .de-info-card a {
+  .de-meta strong {
+    font-weight: 700;
+  }
+
+  .de-meta a {
     color: #1a73b8;
     text-decoration: none;
   }
 
-  .de-info-card a:hover {
+  .de-meta a:hover {
     text-decoration: underline;
   }
 
@@ -143,17 +141,13 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ### AL-MR-GP
 
-<div class="de-info-bar">
-  <div class="de-info-card">
-    <strong>Theory</strong>
-    <a href="#">Add theory link here</a>
-  </div>
+<p class="de-meta">
+  <strong>Theory:</strong> Active-learning-guided multi-fidelity residual Gaussian process modelling.
+</p>
 
-  <div class="de-info-card">
-    <strong>Related paper</strong>
-    <a href="#">Add paper link here</a>
-  </div>
-</div>
+<p class="de-meta">
+  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
+</p>
 
 <img src="{{ '/assets/research/AL-MR-GP.png' | relative_url }}" alt="AL-MR-GP framework" class="de-method-img">
 
@@ -163,17 +157,13 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ### KI-DE-NN
 
-<div class="de-info-bar">
-  <div class="de-info-card">
-    <strong>Theory</strong>
-    <a href="#">Add theory link here</a>
-  </div>
+<p class="de-meta">
+  <strong>Theory:</strong> Knowledge-informed data-efficient neural network modelling.
+</p>
 
-  <div class="de-info-card">
-    <strong>Related paper</strong>
-    <a href="#">Add paper link here</a>
-  </div>
-</div>
+<p class="de-meta">
+  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
+</p>
 
 <img src="{{ '/assets/research/KI-DE-NN.png' | relative_url }}" alt="KI-DE-NN framework" class="de-method-img">
 
@@ -183,17 +173,13 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ### POD-GPR
 
-<div class="de-info-bar">
-  <div class="de-info-card">
-    <strong>Theory</strong>
-    <a href="#">Add theory link here</a>
-  </div>
+<p class="de-meta">
+  <strong>Theory:</strong> Proper orthogonal decomposition combined with Gaussian process regression.
+</p>
 
-  <div class="de-info-card">
-    <strong>Related paper</strong>
-    <a href="#">Add paper link here</a>
-  </div>
-</div>
+<p class="de-meta">
+  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
+</p>
 
 <img src="{{ '/assets/research/POD-GPR1.png' | relative_url }}" alt="POD-GPR framework" class="de-method-img">
 
