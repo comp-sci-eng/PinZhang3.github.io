@@ -42,54 +42,15 @@ weight: 8
     flex: 1.4;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 25px;
+    padding: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
   }
 
-  .form-row {
-    display: flex;
-    gap: 15px;
-  }
-
-  .form-group {
-    flex: 1;
-    margin-bottom: 18px;
-  }
-
-  .form-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-
-  .form-group input,
-  .form-group textarea {
+  .google-form-frame {
     width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 15px;
-  }
-
-  .form-group textarea {
-    height: 220px;
-    resize: vertical;
-  }
-
-  .send-button {
-    width: 100%;
-    background-color: #168bf2;
-    color: white;
+    height: 850px;
     border: none;
-    border-radius: 8px;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .send-button:hover {
-    background-color: #0f76cc;
   }
 
   @media screen and (max-width: 800px) {
@@ -98,13 +59,12 @@ weight: 8
       gap: 30px;
     }
 
-    .form-row {
-      flex-direction: column;
-      gap: 0;
-    }
-
     .contact-left h1 {
       font-size: 34px;
+    }
+
+    .google-form-frame {
+      height: 950px;
     }
   }
 </style>
@@ -123,51 +83,14 @@ weight: 8
   </div>
 
   <div class="contact-form-box">
-    <form onsubmit="sendMail(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label>First Name *</label>
-          <input type="text" id="firstName" placeholder="Jane" required>
-        </div>
-
-        <div class="form-group">
-          <label>Last Name *</label>
-          <input type="text" id="lastName" placeholder="Smith" required>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>Email *</label>
-        <input type="email" id="email" placeholder="jane@example.com" required>
-      </div>
-
-      <div class="form-group">
-        <label>Message</label>
-        <textarea id="message" placeholder="Write your message here"></textarea>
-      </div>
-
-      <button type="submit" class="send-button">Send Message</button>
-    </form>
+    <iframe
+      class="google-form-frame"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSffcFS0nUp8XdwvlRyxnaOo-Pc6zGU-MqPrXJ3SbXo9j0okLA/viewform?embedded=true"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Loading…
+    </iframe>
   </div>
 
 </div>
-
-<script>
-  function sendMail(event) {
-    event.preventDefault();
-
-    var firstName = document.getElementById("firstName").value;
-    var lastName = document.getElementById("lastName").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    var recipient = "pinzhang@nus.edu.sg";
-    var subject = "Website Contact Form Message";
-    var body =
-      "Name: " + firstName + " " + lastName + "%0D%0A" +
-      "Email: " + email + "%0D%0A%0D%0A" +
-      "Message:%0D%0A" + encodeURIComponent(message);
-
-    window.location.href = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + body;
-  }
-</script>
