@@ -11,7 +11,7 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 ---
 
 <p class="de-case-note">
-  Representative case studies are shown below.
+  Representative case studies:
 </p>
 
 <style>
