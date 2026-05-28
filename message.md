@@ -128,8 +128,9 @@ weight: 8
     <h1>We’d Love to<br>Hear from You<br>and Connect</h1>
 
     <p>
-      We welcome enquiries about research collaboration, student opportunities,
-      visiting positions, and data-efficient geotechnical modelling.
+      We welcome enquiries regarding research questions, collaboration opportunities,
+      and project implementation related to data-efficient geotechnical modelling
+      and digital geotechnics.
     </p>
   </div>
 
