@@ -12,33 +12,152 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
 
 ---
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 25px; margin-bottom: 35px;">
+<style>
+  .de-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
 
-  <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/al-mr-gp/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>AL-MR-GP</h3>
-      <p style="font-size: 14px;">
-        Active-learning-guided multi-fidelity residual Gaussian process modelling for data-efficient geomaterial property prediction.
-      </p>
-    </a>
+  .de-tab {
+    flex: 1;
+    min-width: 220px;
+    border: 2px solid #222;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .de-tab:hover {
+    background-color: #f0f8ff;
+  }
+
+  .de-tab.active {
+    background-color: #dff1ff;
+    border-color: #4a90c2;
+  }
+
+  .de-tab h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .de-tab p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .de-content {
+    display: none;
+    border-top: 2px solid #ddd;
+    padding-top: 25px;
+    margin-top: 10px;
+  }
+
+  .de-content.active {
+    display: block;
+  }
+</style>
+
+<div class="de-tabs">
+
+  <div class="de-tab active" onclick="showDESection('al-mr-gp', this)">
+    <h3>AL-MR-GP</h3>
+    <p>
+      Active-learning-guided multi-fidelity residual Gaussian process modelling for data-efficient geomaterial property prediction.
+    </p>
   </div>
 
-  <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/ki-de-nn/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>KI-DE-NN</h3>
-      <p style="font-size: 14px;">
-        Knowledge-informed data-efficient neural network modelling for robust soil correlation development under sparse data.
-      </p>
-    </a>
+  <div class="de-tab" onclick="showDESection('ki-de-nn', this)">
+    <h3>KI-DE-NN</h3>
+    <p>
+      Knowledge-informed data-efficient neural network modelling for robust soil correlation development under sparse data.
+    </p>
   </div>
 
-  <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/3d-ki-de-nn/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>3D-KI-DE-NN</h3>
-      <p style="font-size: 14px;">
-        Three-dimensional knowledge-informed data-efficient neural network modelling for spatial soil property characterisation.
-      </p>
-    </a>
+  <div class="de-tab" onclick="showDESection('3d-ki-de-nn', this)">
+    <h3>3D-KI-DE-NN</h3>
+    <p>
+      Three-dimensional knowledge-informed data-efficient neural network modelling for spatial soil property characterisation.
+    </p>
   </div>
+
+</div>
+
+<div id="al-mr-gp" class="de-content active">
+
+### AL-MR-GP
+
+**Active Learning based Multi-fidelity Residual Gaussian Process** is designed for data-efficient geomaterial property prediction.
+
+This framework combines abundant low-fidelity data with sparse site-specific high-fidelity data. A low-fidelity model first provides preliminary estimations, and active learning then selects informative high-fidelity observations to calibrate the residual model.
+
+**Main features:**
+
+- Multi-fidelity residual modelling
+- Active learning for informative high-fidelity data acquisition
+- Gaussian-process-based probabilistic prediction
+- Quasi-site-specific soil property modelling
+- Reduced demand for expensive site-specific measurements
+
+</div>
+
+<div id="ki-de-nn" class="de-content">
+
+### KI-DE-NN
+
+**Knowledge-Informed Data-Efficient Neural Network** focuses on developing robust soil correlations under sparse and noisy data conditions.
+
+This framework integrates active learning, knowledge-informed neural network constraints, and uncertainty quantification to improve the reliability and practicality of data-driven soil correlation modelling.
+
+**Main features:**
+
+- Knowledge-informed neural network architecture
+- Positive-output constraint for physically meaningful predictions
+- Active learning for compact informative datasets
+- Monte Carlo dropout for uncertainty quantification
+- Efficient prediction of soil compression-related parameters
+
+</div>
+
+<div id="3d-ki-de-nn" class="de-content">
+
+### 3D-KI-DE-NN
+
+**Three-dimensional Knowledge-Informed Data-Efficient Neural Network** extends data-efficient learning toward spatial geotechnical modelling.
+
+This direction aims to support three-dimensional soil property characterisation by combining spatial information, knowledge-informed constraints, and data-efficient learning strategies.
+
+**Main features:**
+
+- 3D spatial soil property modelling
+- Data-efficient learning under limited site investigation data
+- Knowledge-informed constraints for physically reasonable prediction
+- Spatial uncertainty characterisation
+- Potential applications in digital ground modelling and site characterisation
+
+</div>
+
+<script>
+  function showDESection(sectionId, clickedTab) {
+    var contents = document.querySelectorAll('.de-content');
+    var tabs = document.querySelectorAll('.de-tab');
+
+    contents.forEach(function(content) {
+      content.classList.remove('active');
+    });
+
+    tabs.forEach(function(tab) {
+      tab.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+    clickedTab.classList.add('active');
+  }
+</script>
 
 </div>
