@@ -22,7 +22,7 @@ weight: 2
 
 <!-- This is for Geo-data and Digital Geotechnics -->
 
-<p style="float: left; font-size: 9pt; text-align: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;"><a href="{{ '/data-efficient/' | relative_url }}"><font size="3">Geo-data and Digital Geotechnics</font><img src="{{ '/assets/research/Uncertainty.gif' | relative_url }}" style="width: 100%; border: 2px solid black;"></a></p>
+<p style="float: left; font-size: 9pt; text-align: center; width: 80%; margin-right: 1%; margin-bottom: 0.5em;"><a href="https://comp-sci-eng.github.io/PinZhang3.github.io/data-efficient/"><font size="3">Geo-data and Digital Geotechnics</font><img src="{{ '/assets/research/Uncertainty.gif' | relative_url }}" style="width: 100%; border: 2px solid black;"></a></p>
 <p style="clear: both;">
   
 <!-- This is for Digital Twins -->
