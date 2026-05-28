@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Active Learning
-permalink: /data-efficient/active-learning/
+title: KI-DE-NN
+permalink: /data-efficient/ki-de-nn/
 ---
 
-## Active Learning
+## KI-DE-NN
 
-This page introduces active learning for informative geotechnical data acquisition.
+Knowledge-Informed Data-Efficient Neural Network modelling for soil correlation development.
 
-Instead of randomly collecting new data, active learning identifies the most informative samples, reducing the need for expensive high-fidelity tests.
+This framework integrates active learning, knowledge-informed constraints, and uncertainty quantification to improve soil property prediction under sparse and noisy data conditions.
