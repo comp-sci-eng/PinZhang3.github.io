@@ -15,38 +15,30 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 25px; margin-bottom: 35px;">
 
   <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/multi-fidelity-learning/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>Multi-fidelity Learning</h3>
+    <a href="{{ '/data-efficient/al-mr-gp/' | relative_url }}" style="text-decoration: none; color: black;">
+      <h3>AL-MR-GP</h3>
       <p style="font-size: 14px;">
-        Combining abundant low-fidelity data with sparse high-fidelity site-specific data for quasi-site-specific soil property prediction.
+        Active-learning-guided multi-fidelity residual Gaussian process modelling for data-efficient geomaterial property prediction.
       </p>
     </a>
   </div>
 
   <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/active-learning/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>Active Learning</h3>
+    <a href="{{ '/data-efficient/ki-de-nn/' | relative_url }}" style="text-decoration: none; color: black;">
+      <h3>KI-DE-NN</h3>
       <p style="font-size: 14px;">
-        Selecting a few informative high-fidelity observations to reduce data demand and improve model reliability.
+        Knowledge-informed data-efficient neural network modelling for robust soil correlation development under sparse data.
       </p>
     </a>
   </div>
 
   <div style="flex: 1; min-width: 220px; border: 2px solid #222; padding: 18px; text-align: center;">
-    <a href="{{ '/data-efficient/uncertainty-quantification/' | relative_url }}" style="text-decoration: none; color: black;">
-      <h3>Uncertainty Quantification</h3>
+    <a href="{{ '/data-efficient/3d-ki-de-nn/' | relative_url }}" style="text-decoration: none; color: black;">
+      <h3>3D-KI-DE-NN</h3>
       <p style="font-size: 14px;">
-        Producing probabilistic predictions with uncertainty estimates to support reliability-based geotechnical design.
+        Three-dimensional knowledge-informed data-efficient neural network modelling for spatial soil property characterisation.
       </p>
     </a>
   </div>
 
 </div>
-
-### Key topics
-
-- Multi-fidelity residual modelling
-- Active learning for informative data acquisition
-- Probabilistic soil property prediction
-- Uncertainty quantification
-- Quasi-site-specific geotechnical modelling
