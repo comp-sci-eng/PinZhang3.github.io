@@ -54,9 +54,21 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
     display: block;
   }
 
+  .de-method-img {
+    display: block;
+    width: 85%;
+    max-width: 850px;
+    margin: 25px auto 30px auto;
+    border: 1px solid #ddd;
+  }
+
   @media screen and (max-width: 700px) {
     .de-tabs {
       flex-direction: column;
+    }
+
+    .de-method-img {
+      width: 100%;
     }
   }
 </style>
@@ -81,6 +93,8 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ### AL-MR-GP
 
+<img src="{{ '/assets/research/AL-MR-GP.png' | relative_url }}" alt="AL-MR-GP framework" class="de-method-img">
+
 **Active Learning based Multi-fidelity Residual Gaussian Process** is designed for data-efficient geomaterial property prediction.
 
 This framework combines abundant low-fidelity data with sparse site-specific high-fidelity data. A low-fidelity model first provides preliminary estimations, and active learning then selects informative high-fidelity observations to calibrate the residual model.
@@ -99,6 +113,8 @@ This framework combines abundant low-fidelity data with sparse site-specific hig
 
 ### KI-DE-NN
 
+<img src="{{ '/assets/research/KI-DE-NN.png' | relative_url }}" alt="KI-DE-NN framework" class="de-method-img">
+
 **Knowledge-Informed Data-Efficient Neural Network** focuses on developing robust soil correlations under sparse and noisy data conditions.
 
 This framework integrates active learning, knowledge-informed neural network constraints, and uncertainty quantification to improve the reliability and practicality of data-driven soil correlation modelling.
@@ -116,6 +132,8 @@ This framework integrates active learning, knowledge-informed neural network con
 <div id="pod-gpr" class="de-content">
 
 ### POD-GPR
+
+<img src="{{ '/assets/research/POD-GPR1.png' | relative_url }}" alt="POD-GPR framework" class="de-method-img">
 
 **Proper Orthogonal Decomposition Gaussian Process Regression** provides a reduced-order probabilistic modelling strategy for efficient geotechnical prediction.
 
