@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Uncertainty Quantification
-permalink: /data-efficient/uncertainty-quantification/
+title: 3D-KI-DE-NN
+permalink: /data-efficient/3d-ki-de-nn/
 ---
 
-## Uncertainty Quantification
+## 3D-KI-DE-NN
 
-This page introduces uncertainty quantification in data-efficient geotechnical modelling.
+Three-dimensional Knowledge-Informed Data-Efficient Neural Network modelling for spatial soil property characterisation.
 
-Probabilistic models provide both predicted soil properties and uncertainty estimates, supporting reliability-based engineering design.
+This page introduces data-efficient learning for three-dimensional geotechnical modelling and spatial soil property prediction.
