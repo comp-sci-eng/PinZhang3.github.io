@@ -14,39 +14,51 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
   .de-tabs {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    gap: 14px;
+    margin-top: 28px;
+    margin-bottom: 34px;
+    padding: 8px;
+    background: #f7f9fb;
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
   }
 
   .de-tab {
     flex: 1;
-    border: 2px solid #222;
-    padding: 20px 12px;
+    padding: 16px 14px;
     text-align: center;
     cursor: pointer;
     background-color: #ffffff;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
   }
 
   .de-tab:hover {
-    background-color: #f0f8ff;
+    background-color: #eef7ff;
+    border-color: #8bbce8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 
   .de-tab.active {
     background-color: #dff1ff;
     border-color: #4a90c2;
+    box-shadow: 0 4px 14px rgba(74,144,194,0.22);
   }
 
   .de-tab h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
   }
 
   .de-content {
     display: none;
-    border-top: 2px solid #ddd;
-    padding-top: 25px;
+    border-top: 1px solid #e5eaf0;
+    padding-top: 26px;
     margin-top: 10px;
   }
 
@@ -54,12 +66,50 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
     display: block;
   }
 
+  .de-section-title {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  .de-info-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: stretch;
+    margin: 18px 0 22px 0;
+  }
+
+  .de-info-card {
+    flex: 1;
+    min-width: 240px;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    padding: 14px 16px;
+    background-color: #fbfdff;
+  }
+
+  .de-info-card strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  .de-info-card a {
+    color: #1a73b8;
+    text-decoration: none;
+  }
+
+  .de-info-card a:hover {
+    text-decoration: underline;
+  }
+
   .de-method-img {
     display: block;
-    width: 85%;
-    max-width: 850px;
-    margin: 25px auto 30px auto;
+    width: 88%;
+    max-width: 900px;
+    margin: 24px auto 30px auto;
     border: 1px solid #ddd;
+    border-radius: 8px;
   }
 
   @media screen and (max-width: 700px) {
@@ -93,19 +143,19 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
 ### AL-MR-GP
 
+<div class="de-info-bar">
+  <div class="de-info-card">
+    <strong>Theory</strong>
+    <a href="#">Add theory link here</a>
+  </div>
+
+  <div class="de-info-card">
+    <strong>Related paper</strong>
+    <a href="#">Add paper link here</a>
+  </div>
+</div>
+
 <img src="{{ '/assets/research/AL-MR-GP.png' | relative_url }}" alt="AL-MR-GP framework" class="de-method-img">
-
-**Active Learning based Multi-fidelity Residual Gaussian Process** is designed for data-efficient geomaterial property prediction.
-
-This framework combines abundant low-fidelity data with sparse site-specific high-fidelity data. A low-fidelity model first provides preliminary estimations, and active learning then selects informative high-fidelity observations to calibrate the residual model.
-
-**Main features:**
-
-- Multi-fidelity residual modelling
-- Active learning for informative high-fidelity data acquisition
-- Gaussian-process-based probabilistic prediction
-- Quasi-site-specific soil property modelling
-- Reduced demand for expensive site-specific measurements
 
 </div>
 
@@ -113,19 +163,19 @@ This framework combines abundant low-fidelity data with sparse site-specific hig
 
 ### KI-DE-NN
 
+<div class="de-info-bar">
+  <div class="de-info-card">
+    <strong>Theory</strong>
+    <a href="#">Add theory link here</a>
+  </div>
+
+  <div class="de-info-card">
+    <strong>Related paper</strong>
+    <a href="#">Add paper link here</a>
+  </div>
+</div>
+
 <img src="{{ '/assets/research/KI-DE-NN.png' | relative_url }}" alt="KI-DE-NN framework" class="de-method-img">
-
-**Knowledge-Informed Data-Efficient Neural Network** focuses on developing robust soil correlations under sparse and noisy data conditions.
-
-This framework integrates active learning, knowledge-informed neural network constraints, and uncertainty quantification to improve the reliability and practicality of data-driven soil correlation modelling.
-
-**Main features:**
-
-- Knowledge-informed neural network architecture
-- Positive-output constraint for physically meaningful predictions
-- Active learning for compact informative datasets
-- Monte Carlo dropout for uncertainty quantification
-- Efficient prediction of soil compression-related parameters
 
 </div>
 
@@ -133,19 +183,19 @@ This framework integrates active learning, knowledge-informed neural network con
 
 ### POD-GPR
 
+<div class="de-info-bar">
+  <div class="de-info-card">
+    <strong>Theory</strong>
+    <a href="#">Add theory link here</a>
+  </div>
+
+  <div class="de-info-card">
+    <strong>Related paper</strong>
+    <a href="#">Add paper link here</a>
+  </div>
+</div>
+
 <img src="{{ '/assets/research/POD-GPR1.png' | relative_url }}" alt="POD-GPR framework" class="de-method-img">
-
-**Proper Orthogonal Decomposition Gaussian Process Regression** provides a reduced-order probabilistic modelling strategy for efficient geotechnical prediction.
-
-This framework combines dimensionality reduction with Gaussian-process-based uncertainty quantification, enabling efficient prediction when model outputs are high-dimensional or spatially distributed.
-
-**Main features:**
-
-- Proper orthogonal decomposition for reduced-order representation
-- Gaussian process regression for probabilistic prediction
-- Efficient modelling of high-dimensional geotechnical responses
-- Uncertainty-aware prediction
-- Potential applications in spatial soil property modelling and digital geotechnics
 
 </div>
 
