@@ -129,8 +129,7 @@ weight: 8
 
     <p>
       We welcome enquiries regarding research questions, collaboration opportunities,
-      and project implementation related to data-efficient geotechnical modelling
-      and digital geotechnics.
+      and project implementation.
     </p>
   </div>
 
