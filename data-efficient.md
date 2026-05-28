@@ -15,7 +15,7 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
 <style>
   .de-tabs {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px;
     margin-top: 25px;
     margin-bottom: 30px;
@@ -23,9 +23,8 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
 
   .de-tab {
     flex: 1;
-    min-width: 220px;
     border: 2px solid #222;
-    padding: 18px;
+    padding: 20px 12px;
     text-align: center;
     cursor: pointer;
     background-color: #ffffff;
@@ -42,13 +41,8 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
   }
 
   .de-tab h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .de-tab p {
-    font-size: 14px;
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 20px;
   }
 
   .de-content {
@@ -61,29 +55,26 @@ The main idea is to combine abundant low-fidelity data with a few informative hi
   .de-content.active {
     display: block;
   }
+
+  @media screen and (max-width: 700px) {
+    .de-tabs {
+      flex-direction: column;
+    }
+  }
 </style>
 
 <div class="de-tabs">
 
   <div class="de-tab active" onclick="showDESection('al-mr-gp', this)">
     <h3>AL-MR-GP</h3>
-    <p>
-      Active-learning-guided multi-fidelity residual Gaussian process modelling for data-efficient geomaterial property prediction.
-    </p>
   </div>
 
   <div class="de-tab" onclick="showDESection('ki-de-nn', this)">
     <h3>KI-DE-NN</h3>
-    <p>
-      Knowledge-informed data-efficient neural network modelling for robust soil correlation development under sparse data.
-    </p>
   </div>
 
-  <div class="de-tab" onclick="showDESection('3d-ki-de-nn', this)">
-    <h3>3D-KI-DE-NN</h3>
-    <p>
-      Three-dimensional knowledge-informed data-efficient neural network modelling for spatial soil property characterisation.
-    </p>
+  <div class="de-tab" onclick="showDESection('pod-gpr', this)">
+    <h3>POD-GPR</h3>
   </div>
 
 </div>
@@ -124,21 +115,21 @@ This framework integrates active learning, knowledge-informed neural network con
 
 </div>
 
-<div id="3d-ki-de-nn" class="de-content">
+<div id="pod-gpr" class="de-content">
 
-### 3D-KI-DE-NN
+### POD-GPR
 
-**Three-dimensional Knowledge-Informed Data-Efficient Neural Network** extends data-efficient learning toward spatial geotechnical modelling.
+**Proper Orthogonal Decomposition Gaussian Process Regression** provides a reduced-order probabilistic modelling strategy for efficient geotechnical prediction.
 
-This direction aims to support three-dimensional soil property characterisation by combining spatial information, knowledge-informed constraints, and data-efficient learning strategies.
+This framework combines dimensionality reduction with Gaussian-process-based uncertainty quantification, enabling efficient prediction when model outputs are high-dimensional or spatially distributed.
 
 **Main features:**
 
-- 3D spatial soil property modelling
-- Data-efficient learning under limited site investigation data
-- Knowledge-informed constraints for physically reasonable prediction
-- Spatial uncertainty characterisation
-- Potential applications in digital ground modelling and site characterisation
+- Proper orthogonal decomposition for reduced-order representation
+- Gaussian process regression for probabilistic prediction
+- Efficient modelling of high-dimensional geotechnical responses
+- Uncertainty-aware prediction
+- Potential applications in spatial soil property modelling and digital geotechnics
 
 </div>
 
@@ -159,5 +150,3 @@ This direction aims to support three-dimensional soil property characterisation 
     clickedTab.classList.add('active');
   }
 </script>
-
-</div>
