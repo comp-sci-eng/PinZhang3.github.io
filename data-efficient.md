@@ -4,29 +4,12 @@ title: Data-Efficient Geotechnical Modelling
 permalink: /data-efficient/
 ---
 
-## Data-Efficient Geotechnical Modelling
-
-Geotechnical data are often sparse, uncertain, site-dependent, and expensive to obtain. Our work develops data-efficient probabilistic modelling frameworks for reliable soil property prediction under limited data conditions.
-
----
-
-<p class="de-case-note">
-  Representative case studies:
-</p>
-
 <style>
-  .de-case-note {
-    margin-top: 24px;
-    margin-bottom: 14px;
-    font-size: 16px;
-    color: #444;
-  }
-
   .de-tabs {
     display: flex;
     flex-direction: row;
     gap: 14px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 34px;
     padding: 8px;
     background: #f7f9fb;
@@ -61,7 +44,7 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
 
   .de-tab h3 {
     margin: 0;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.3px;
   }
@@ -69,7 +52,7 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
   .de-content {
     display: none;
     border-top: 1px solid #e5eaf0;
-    padding-top: 26px;
+    padding-top: 30px;
     margin-top: 10px;
   }
 
@@ -77,111 +60,130 @@ Geotechnical data are often sparse, uncertain, site-dependent, and expensive to 
     display: block;
   }
 
-  .de-method-title {
+  .de-case-row {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .de-case-image {
+    flex: 1.1;
+  }
+
+  .de-case-image img {
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .de-case-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+  }
+
+  .de-case-text p {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
-  .de-meta {
-    margin: 6px 0;
+  .de-links {
+    margin-top: 18px;
     font-size: 15px;
-    line-height: 1.5;
   }
 
-  .de-meta strong {
-    font-weight: 700;
-  }
-
-  .de-meta a {
+  .de-links a {
     color: #1a73b8;
     text-decoration: none;
+    font-weight: 600;
   }
 
-  .de-meta a:hover {
+  .de-links a:hover {
     text-decoration: underline;
   }
 
-  .de-method-img {
-    display: block;
-    width: 88%;
-    max-width: 900px;
-    margin: 24px auto 30px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     .de-tabs {
       flex-direction: column;
     }
 
-    .de-method-img {
-      width: 100%;
+    .de-case-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .de-case-image img {
+      max-width: 100%;
     }
   }
 </style>
 
 <div class="de-tabs">
 
-  <div class="de-tab active" onclick="showDESection('al-mr-gp', this)">
-    <h3>AL-MR-GP</h3>
+  <div class="de-tab active" onclick="showDESection('geo-data', this)">
+    <h3>Geo-data</h3>
   </div>
 
-  <div class="de-tab" onclick="showDESection('ki-de-nn', this)">
-    <h3>KI-DE-NN</h3>
-  </div>
-
-  <div class="de-tab" onclick="showDESection('pod-gpr', this)">
-    <h3>POD-GPR</h3>
+  <div class="de-tab" onclick="showDESection('tunneling', this)">
+    <h3>Tunneling</h3>
   </div>
 
 </div>
 
-<div id="al-mr-gp" class="de-content active">
+<div id="geo-data" class="de-content active">
 
-### AL-MR-GP
+  <div class="de-case-row">
 
-<p class="de-meta">
-  <strong>Theory:</strong> Active-learning-guided multi-fidelity residual Gaussian process modelling.
-</p>
+    <div class="de-case-image">
+      <img src="{{ '/assets/research/KI-DE.png' | relative_url }}" alt="KI-DE framework">
+    </div>
 
-<p class="de-meta">
-  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
-</p>
+    <div class="de-case-text">
+      <p>
+        <strong>KIDE theory:</strong> A Knowledge-Informed Data-Efficient framework that maximises the value of sparse, noisy, and uncertain geotechnical data while preserving engineering realism and predictive reliability.
+      </p>
 
-<img src="{{ '/assets/research/AL-MR-GP.png' | relative_url }}" alt="AL-MR-GP framework" class="de-method-img">
+      <div class="de-links">
+        Paper <a href="#">[link]</a>; 
+        Code <a href="#">[link]</a>; 
+        Software <a href="#">[link]</a>
+      </div>
+    </div>
 
-</div>
-
-<div id="ki-de-nn" class="de-content">
-
-### KI-DE-NN
-
-<p class="de-meta">
-  <strong>Theory:</strong> Knowledge-informed data-efficient neural network modelling.
-</p>
-
-<p class="de-meta">
-  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
-</p>
-
-<img src="{{ '/assets/research/KI-DE-NN.png' | relative_url }}" alt="KI-DE-NN framework" class="de-method-img">
+  </div>
 
 </div>
 
-<div id="pod-gpr" class="de-content">
+<div id="tunneling" class="de-content">
 
-### POD-GPR
+  <div class="de-case-row">
 
-<p class="de-meta">
-  <strong>Theory:</strong> Proper orthogonal decomposition combined with Gaussian process regression.
-</p>
+    <div class="de-case-image">
+      <!-- Add tunneling image here later -->
+      <!-- Example:
+      <img src="{{ '/assets/research/tunneling-image.png' | relative_url }}" alt="Tunneling framework">
+      -->
+    </div>
 
-<p class="de-meta">
-  <strong>Related paper:</strong> <a href="#">Add paper link here</a>
-</p>
+    <div class="de-case-text">
+      <p>
+        <strong>Tunneling:</strong> Add tunneling-related description here.
+      </p>
 
-<img src="{{ '/assets/research/POD-GPR1.png' | relative_url }}" alt="POD-GPR framework" class="de-method-img">
+      <div class="de-links">
+        Paper <a href="#">[link]</a>; 
+        Code <a href="#">[link]</a>; 
+        Software <a href="#">[link]</a>
+      </div>
+    </div>
+
+  </div>
 
 </div>
 
