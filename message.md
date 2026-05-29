@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
+title: Consult
+permalink: /consult/
 weight: 8
 ---
 
@@ -123,7 +123,7 @@ weight: 8
 <div class="contact-wrapper">
 
   <div class="contact-left">
-    <div class="tag">✈ Contact Us</div>
+    <div class="tag">✈ Consult Us</div>
 
     <h1>We’d Love to<br>Hear from You<br>and Connect</h1>
 
