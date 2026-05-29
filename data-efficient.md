@@ -108,6 +108,11 @@ permalink: /data-efficient/
     text-decoration: underline;
   }
 
+  .de-link-separator {
+    margin: 0 12px;
+    color: #777;
+  }
+
   @media screen and (max-width: 800px) {
     .de-tabs {
       flex-direction: column;
@@ -150,8 +155,10 @@ permalink: /data-efficient/
       </p>
 
       <div class="de-links">
-        <a href="https://www.sciencedirect.com/science/article/pii/S0266352X2600296X">Paper</a>;
-        <a href="https://github.com/PinZhang3/Data-Driven-Modelling-and-Computation/tree/main/Knowledge-informed%20data-efficient%20modelling" target="_blank" rel="noopener noreferrer">Code</a>;
+        <a href="https://www.sciencedirect.com/science/article/pii/S0266352X2600296X" target="_blank" rel="noopener noreferrer">Paper</a>
+        <span class="de-link-separator">·</span>
+        <a href="https://github.com/PinZhang3/Data-Driven-Modelling-and-Computation/tree/main/Knowledge-informed%20data-efficient%20modelling" target="_blank" rel="noopener noreferrer">Code</a>
+        <span class="de-link-separator">·</span>
         <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
@@ -177,8 +184,10 @@ permalink: /data-efficient/
       </p>
 
       <div class="de-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>;
-        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>;
+        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
+        <span class="de-link-separator">·</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+        <span class="de-link-separator">·</span>
         <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
