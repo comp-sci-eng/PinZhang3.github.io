@@ -135,8 +135,8 @@ permalink: /data-efficient/
     <h3>Geo-data</h3>
   </div>
 
-  <div class="de-tab" onclick="showDESection('tunneling', this)">
-    <h3>Tunneling</h3>
+  <div class="de-tab" onclick="showDESection('tunnel-tunnelling', this)">
+    <h3>Tunnel & Tunnelling</h3>
   </div>
 
 </div>
@@ -157,9 +157,9 @@ permalink: /data-efficient/
       <div class="de-links">
         <a href="https://www.sciencedirect.com/science/article/pii/S0266352X2600296X" target="_blank" rel="noopener noreferrer">Paper</a>
         <span class="de-link-separator">·</span>
-        <a href="https://github.com/PinZhang3/Data-Driven-Modelling-and-Computation/tree/main/Knowledge-informed%20data-efficient%20modelling" target="_blank" rel="noopener noreferrer">Code</a>
+        <a href="https://github.com/PinZhang3/Data-Driven-Modelling-and-Computation/tree/main/ANN%20Basis" target="_blank" rel="noopener noreferrer">Code</a>
         <span class="de-link-separator">·</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
+        <a href="https://pinzhang3.github.io/NN_correlation/" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
 
@@ -167,20 +167,20 @@ permalink: /data-efficient/
 
 </div>
 
-<div id="tunneling" class="de-content">
+<div id="tunnel-tunnelling" class="de-content">
 
   <div class="de-case-row">
 
     <div class="de-case-image">
-      <!-- Add tunneling image here later -->
+      <!-- Add tunnel and tunnelling image here later -->
       <!-- Example:
-      <img src="{{ '/assets/research/tunneling-image.png' | relative_url }}" alt="Tunneling framework">
+      <img src="{{ '/assets/research/tunnelling-image.png' | relative_url }}" alt="Tunnel and tunnelling framework">
       -->
     </div>
 
     <div class="de-case-text">
       <p>
-        <strong>Tunneling:</strong> Add tunneling-related description here.
+        <strong>Tunnel & Tunnelling:</strong> Add tunnel and tunnelling-related description here.
       </p>
 
       <div class="de-links">
