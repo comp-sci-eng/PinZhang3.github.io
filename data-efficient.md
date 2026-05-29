@@ -131,8 +131,8 @@ permalink: /data-efficient/
 
 <div class="de-tabs">
 
-  <div class="de-tab active" onclick="showDESection('geo-data', this)">
-    <h3>Geo-data</h3>
+  <div class="de-tab active" onclick="showDESection('geodata', this)">
+    <h3>Geodata</h3>
   </div>
 
   <div class="de-tab" onclick="showDESection('tunnel-tunnelling', this)">
@@ -141,7 +141,7 @@ permalink: /data-efficient/
 
 </div>
 
-<div id="geo-data" class="de-content active">
+<div id="geodata" class="de-content active">
 
   <div class="de-case-row">
 
