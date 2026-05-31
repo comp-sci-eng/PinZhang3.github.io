@@ -9,9 +9,8 @@ permalink: /data-efficient/
     display: flex;
     flex-direction: row;
     gap: 14px;
-    width: 78%;
-    max-width: 760px;
-    margin: 20px auto 34px auto;
+    margin-top: 20px;
+    margin-bottom: 34px;
     padding: 8px;
     background: #f7f9fb;
     border: 1px solid #e5eaf0;
@@ -20,7 +19,7 @@ permalink: /data-efficient/
 
   .de-tab {
     flex: 1;
-    padding: 14px 12px;
+    padding: 10px 12px;
     text-align: center;
     cursor: pointer;
     background-color: #ffffff;
@@ -122,7 +121,6 @@ permalink: /data-efficient/
 
   @media screen and (max-width: 800px) {
     .de-tabs {
-      width: 100%;
       flex-direction: column;
     }
 
@@ -176,26 +174,6 @@ permalink: /data-efficient/
   <div class="de-case-row">
 
     <div class="de-case-image">
-      <img src="{{ '/assets/research/AL-KI.png' | relative_url }}" alt="AL-KI framework">
-    </div>
-
-    <div class="de-case-text">
-      <p>
-        <strong>AL-KI framework:</strong> an active learning-guided and knowledge-informed framework that integrates numerous CPT data collected from multiple sites with selectively acquired data from a target site, enabling efficient characterization of soil spatial variability.
-      </p>
-
-      <div class="de-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
-        <span class="de-link-separator">·</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="de-case-row">
-
-    <div class="de-case-image">
       <img src="{{ '/assets/research/AL-Siting.png' | relative_url }}" alt="AL-Siting for CPT framework">
     </div>
 
@@ -203,12 +181,20 @@ permalink: /data-efficient/
       <p>
         <strong>AL-Siting for CPT:</strong> An active-learning-guided framework that maximises the expected information gain of the next CPT sounding for efficient CPT sampling location selection, built upon reduced-order POD-GPR modelling for uncertainty-aware 3D site characterization.
       </p>
+    </div>
 
-      <div class="de-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
-        <span class="de-link-separator">·</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
-      </div>
+  </div>
+
+  <div class="de-case-row">
+
+    <div class="de-case-image">
+      <img src="{{ '/assets/research/AL-KI.png' | relative_url }}" alt="AL-KI framework">
+    </div>
+
+    <div class="de-case-text">
+      <p>
+        <strong>AL-KI framework:</strong> an active learning-guided and knowledge-informed framework that integrates numerous CPT data collected from multiple sites with selectively acquired data from a target site, enabling efficient characterization of soil spatial variability.
+      </p>
     </div>
 
   </div>
