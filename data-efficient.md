@@ -9,8 +9,9 @@ permalink: /data-efficient/
     display: flex;
     flex-direction: row;
     gap: 14px;
-    margin-top: 20px;
-    margin-bottom: 34px;
+    width: 88%;
+    max-width: 900px;
+    margin: 20px auto 34px auto;
     padding: 8px;
     background: #f7f9fb;
     border: 1px solid #e5eaf0;
@@ -121,6 +122,7 @@ permalink: /data-efficient/
 
   @media screen and (max-width: 800px) {
     .de-tabs {
+      width: 100%;
       flex-direction: column;
     }
 
