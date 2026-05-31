@@ -195,6 +195,28 @@ permalink: /data-efficient/
 
   </div>
 
+  <div class="de-case-row">
+
+    <div class="de-case-image">
+      <img src="{{ '/assets/research/AL-Siting.png' | relative_url }}" alt="AL-Siting for CPT framework">
+    </div>
+
+    <div class="de-case-text">
+      <p>
+        <strong>AL-Siting for CPT:</strong> An active-learning-guided framework that maximises the expected information gain of the next CPT sounding for efficient CPT sampling location selection, built upon reduced-order POD-GPR modelling for uncertainty-aware 3D site characterization.
+      </p>
+
+      <div class="de-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
+        <span class="de-link-separator">·</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+        <span class="de-link-separator">·</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
 <div id="tunnel-tunnelling" class="de-content">
