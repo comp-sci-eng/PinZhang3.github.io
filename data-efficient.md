@@ -9,23 +9,22 @@ permalink: /data-efficient/
     display: flex;
     flex-direction: row;
     gap: 14px;
-    width: 88%;
-    max-width: 900px;
-    margin: 20px auto 34px auto;
-    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 34px;
+    padding: 5px;
     background: #f7f9fb;
     border: 1px solid #e5eaf0;
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .de-tab {
     flex: 1;
-    padding: 10px 12px;
+    padding: 6px 12px;
     text-align: center;
     cursor: pointer;
     background-color: #ffffff;
     border: 1px solid #d9e2ec;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     transition: all 0.2s ease;
   }
@@ -45,7 +44,7 @@ permalink: /data-efficient/
 
   .de-tab h3 {
     margin: 0;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.3px;
   }
@@ -122,7 +121,6 @@ permalink: /data-efficient/
 
   @media screen and (max-width: 800px) {
     .de-tabs {
-      width: 100%;
       flex-direction: column;
     }
 
