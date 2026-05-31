@@ -138,23 +138,23 @@ weight: 8
       <div class="form-row">
         <div class="form-group">
           <label>First Name *</label>
-          <input type="text" name="firstName" placeholder="Jane" required>
+          <input type="text" name="firstName" required>
         </div>
 
         <div class="form-group">
           <label>Last Name *</label>
-          <input type="text" name="lastName" placeholder="Smith" required>
+          <input type="text" name="lastName" required>
         </div>
       </div>
 
       <div class="form-group">
         <label>Email *</label>
-        <input type="email" name="email" placeholder="jane@example.com" required>
+        <input type="email" name="email" required>
       </div>
 
       <div class="form-group">
         <label>Message *</label>
-        <textarea name="message" placeholder="Write your message here" required></textarea>
+        <textarea name="message" required></textarea>
       </div>
 
       <button type="submit" class="send-button" id="sendButton">Send Message</button>
