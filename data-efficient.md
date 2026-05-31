@@ -174,7 +174,7 @@ permalink: /data-efficient/
   <div class="de-case-row">
 
     <div class="de-case-image">
-      <img src="{{ '/assets/research/AL-Siting.gif' | relative_url }}" alt="CPT/Borehole location optimisation">
+      <img src="{{ '/assets/research/AL process.gif' | relative_url }}" alt="CPT/Borehole location optimisation">
     </div>
 
     <div class="de-case-text">
