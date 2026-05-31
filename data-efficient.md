@@ -174,12 +174,12 @@ permalink: /data-efficient/
   <div class="de-case-row">
 
     <div class="de-case-image">
-      <img src="{{ '/assets/research/AL-Siting.png' | relative_url }}" alt="AL-Siting for CPT framework">
+      <img src="{{ '/assets/research/AL-Siting.gif' | relative_url }}" alt="CPT/Borehole location optimisation">
     </div>
 
     <div class="de-case-text">
       <p>
-        <strong>AL-Siting for CPT:</strong> An active-learning-guided framework that maximises the expected information gain of the next CPT sounding for efficient CPT sampling location selection, built upon reduced-order POD-GPR modelling for uncertainty-aware 3D site characterization.
+        <strong>CPT/Borehole location optimisation:</strong> Optimising CPT and borehole locations to maximise information gain while minimising site investigation costs.
       </p>
     </div>
 
@@ -188,12 +188,12 @@ permalink: /data-efficient/
   <div class="de-case-row">
 
     <div class="de-case-image">
-      <img src="{{ '/assets/research/AL-KI.png' | relative_url }}" alt="AL-KI framework">
+      <img src="{{ '/assets/research/AL-KI.png' | relative_url }}" alt="Soil Testing Optimisation">
     </div>
 
     <div class="de-case-text">
       <p>
-        <strong>AL-KI framework:</strong> an active learning-guided and knowledge-informed framework that integrates numerous CPT data collected from multiple sites with selectively acquired data from a target site, enabling efficient characterization of soil spatial variability.
+        <strong>Soil Testing Optimisation:</strong> Identifying the most informative soil samples and laboratory tests to maximise model accuracy while minimising testing effort.
       </p>
     </div>
 
