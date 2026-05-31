@@ -188,8 +188,6 @@ permalink: /data-efficient/
         <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
         <span class="de-link-separator">·</span>
         <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
-        <span class="de-link-separator">·</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
 
@@ -210,8 +208,6 @@ permalink: /data-efficient/
         <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
         <span class="de-link-separator">·</span>
         <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
-        <span class="de-link-separator">·</span>
-        <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
 
