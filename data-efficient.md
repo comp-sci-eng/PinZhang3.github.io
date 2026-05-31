@@ -9,8 +9,9 @@ permalink: /data-efficient/
     display: flex;
     flex-direction: row;
     gap: 14px;
-    margin-top: 20px;
-    margin-bottom: 34px;
+    width: 78%;
+    max-width: 760px;
+    margin: 20px auto 34px auto;
     padding: 8px;
     background: #f7f9fb;
     border: 1px solid #e5eaf0;
@@ -19,7 +20,7 @@ permalink: /data-efficient/
 
   .de-tab {
     flex: 1;
-    padding: 16px 14px;
+    padding: 14px 12px;
     text-align: center;
     cursor: pointer;
     background-color: #ffffff;
@@ -44,7 +45,7 @@ permalink: /data-efficient/
 
   .de-tab h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     letter-spacing: 0.3px;
   }
@@ -66,7 +67,13 @@ permalink: /data-efficient/
     gap: 34px;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 42px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #eef1f4;
+  }
+
+  .de-case-row:last-child {
+    border-bottom: none;
   }
 
   .de-case-image {
@@ -115,6 +122,7 @@ permalink: /data-efficient/
 
   @media screen and (max-width: 800px) {
     .de-tabs {
+      width: 100%;
       flex-direction: column;
     }
 
@@ -160,6 +168,28 @@ permalink: /data-efficient/
         <a href="https://github.com/PinZhang3/Data-Driven-Modelling-and-Computation/tree/main/ANN%20Basis" target="_blank" rel="noopener noreferrer">Code</a>
         <span class="de-link-separator">·</span>
         <a href="https://pinzhang3.github.io/NN_correlation/" target="_blank" rel="noopener noreferrer">Software</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="de-case-row">
+
+    <div class="de-case-image">
+      <img src="{{ '/assets/research/AL-KI.png' | relative_url }}" alt="AL-KI framework">
+    </div>
+
+    <div class="de-case-text">
+      <p>
+        <strong>AL-KI framework:</strong> an active learning-guided and knowledge-informed framework that integrates numerous CPT data collected from multiple sites with selectively acquired data from a target site, enabling efficient characterization of soil spatial variability.
+      </p>
+
+      <div class="de-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
+        <span class="de-link-separator">·</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+        <span class="de-link-separator">·</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Software</a>
       </div>
     </div>
 
